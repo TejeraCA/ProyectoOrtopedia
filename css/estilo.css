@@ -1,0 +1,379 @@
+@font-face {
+    font-family: Tauri-Regular;
+    src: url(./resources/typo/Tauri-Regular.ttf);
+}
+
+@font-face {
+    font-family: parrafo;
+    src: url(./resources/typo/HindSiliguri-Light.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.header {
+    background-color: #406E8E;
+    display: flex;
+    align-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu ul {
+    text-align: center;
+    color: #CBF7ED;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.menu ul li {
+    list-style-type: none;
+    font-size: 23px;
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+.menu ul li a {
+    color: beige;
+    text-decoration: none;
+}
+
+
+
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.sesion {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+
+
+.main-index {
+    background-image: url(https://img.freepik.com/vector-premium/fondo-abstracto-azul-salud_66029-25.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+
+
+.banner {
+    width: 100%;
+}
+
+.boton-banner {
+    padding: 5px;
+    margin: 5px;
+    margin-left: 1300px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+background-color: #406E8E;
+font-family: parrafo;
+    font-size: 25px;
+    box-shadow: #406E8E 4px 4px;
+    display: inline-block;
+    justify-items: right;
+}
+
+.demo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.radio img {
+    border: #406E8E solid 2px;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.radio {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 25px;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 5px 2px;
+}
+
+.footer {
+    background-color: #406E8E;
+    color: #CBF7ED;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+
+.footer div p {
+    font-family: sans-serif;
+    color: beige;
+    font-size: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    /* margin: 35px; */
+    font-family: sans-serif;
+    color: beige;
+    font-size: 20px;
+}
+
+
+
+h2 {
+    color: #CBF7ED;
+    text-align: right;
+    font-family: Tauri-Regular;
+    background-color: #8EA8C3;
+    font-size: 40px;
+    margin-left: 950px;
+    margin-right: 50px;
+    margin-right: 21px;
+}
+
+
+
+.inter {
+    text-align: center;
+    font-size: 25px;
+    font-family: parrafo;
+    color: #406E8E;
+    margin: 50px;
+}
+
+.desc p {
+    color: #CBF7ED;
+    background-color: #8EA8C3;
+    text-align: right;
+    font-family: parrafo;
+    font-size: 20px;
+    margin-left: 950px;
+    margin-right: 21px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.apps {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    background-color: #406E8E;
+}
+
+.apps img {
+    height: 40px;
+    width: 40px;
+    background-color: #406E8E;
+    border-radius: 25px;
+}
+
+.vista-previa {
+    height: 300px;
+    width: 300px;
+}
+
+
+.conector h2 {
+    text-align: center;
+    margin-left: 0px;
+    background-color: transparent;
+    color: #406E8E;
+    margin-top: 70px;
+    align-items: center;
+}
+
+.conector p {
+    font-family: parrafo;
+    color: #8EA8C3;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.noticias {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.congreso {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    background-color: rgba(143, 159, 176, 0.196);
+    align-items: flex-start;
+    border-radius: 15px;
+    justify-content: center;
+    height: 500px;
+}
+
+.congreso div a {
+    margin: 500px;
+
+}
+
+.congreso div a button {
+    color: black;
+    background-color: #406E8E;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+}
+
+.congreso p {
+    color: black;
+    font-size: 20px;
+    width: 600px;
+    margin-left: 55px;
+    font-family: sans-serif;
+}
+
+.congreso img {
+    width: 500px;
+    border-radius: 25px;
+}
+
+.congreso h2 {
+    font-size: 25px;
+    margin: 25px;
+    background-color: transparent;
+    color: #406E8E;
+    text-align: center;
+    width: 700px;
+}
+
+.form input {
+    display: block;
+}
+
+
+.ver-mas {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.productos {
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+}
+
+.herramienta img {
+    width: 250px;
+    align-items: start;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.herramienta p {
+    margin: 20px;
+    font-family: parrafo;
+    text-align: center;
+}
+
+.herramienta {
+    border: solid grey 2px;
+    border-radius: 15px;
+    margin: 90px;
+    text-align: center;
+    box-shadow: 15px 15px 25px 1px;
+}
+
+.buscar {
+    border-radius: 5px;
+    margin: 15px;
+    height: 25px;
+    width: 300px;
+}
+
+
+
+.serv {
+    color: #406E8E;
+    background-color: #8EA8C3;
+    font-family: Tauri-Regular;
+    padding: 7px;
+    margin: 7px;
+    border-radius: 10px;
+}
+
+.form {
+    margin: 15px;
+}
+
+.form p {
+    margin-top: 20px;
+    font-family: parrafo;
+    font-size: 45px;
+}
+
+.parrafo-form {
+    margin-left: 15px;
+}
+
+.form input {
+    border-radius: 5px;
+    width: 350px;
+    height: 35px;
+}
+
+.nosotros {
+    font-family: parrafo;
+    font-size: large;
+    margin-right: 900px;
+    padding-bottom: 35px;
+}
+
+.historia {
+    margin-left: 25px;
+    padding-bottom: 195px;
+}
+
+.mapa {
+    margin: 25px;
+}
