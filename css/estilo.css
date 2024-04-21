@@ -88,6 +88,23 @@ font-family: parrafo;
     justify-items: right;
 }
 
+.slidefotos{
+    display: flex;
+    justify-content: center;
+    background-color: #406e8e19;
+    padding: 50px;
+}
+
+
+.carousel{
+ display: flex;
+ justify-content: center;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 .demo {
     display: flex;
     flex-direction: row;
@@ -284,6 +301,8 @@ h2 {
     padding: 5px;
     margin: 5px;
     border-radius: 15px;
+    background-color: #406E8E;
+    color: beige;
 }
 
 .productos {
