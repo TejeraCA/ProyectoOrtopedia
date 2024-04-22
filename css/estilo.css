@@ -61,7 +61,8 @@
 
 
 
-.main-index {
+.main-index,
+.main-productos {
     background-image: url(https://img.freepik.com/vector-premium/fondo-abstracto-azul-salud_66029-25.jpg);
     background-size: contain;
     background-repeat: repeat;
@@ -80,15 +81,15 @@
     margin-left: 1300px;
     border-radius: 15px;
     margin-bottom: 35px;
-background-color: #406E8E;
-font-family: parrafo;
+    background-color: #406E8E;
+    font-family: parrafo;
     font-size: 25px;
     box-shadow: #406E8E 4px 4px;
     display: inline-block;
     justify-items: right;
 }
 
-.slidefotos{
+.slidefotos {
     display: flex;
     justify-content: center;
     background-color: #406e8e19;
@@ -96,9 +97,9 @@ font-family: parrafo;
 }
 
 
-.carousel{
- display: flex;
- justify-content: center;
+.carousel {
+    display: flex;
+    justify-content: center;
     width: 900px;
     height: 500px;
     overflow: hidden;
@@ -133,6 +134,7 @@ font-family: parrafo;
     padding: 5px;
     text-align: center;
     box-shadow: 1px 1px 5px 2px;
+    background-color: #406e8e39;
 }
 
 .footer {
@@ -223,14 +225,21 @@ h2 {
     width: 300px;
 }
 
+.conector {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
 
 .conector h2 {
     text-align: center;
     margin-left: 0px;
-    background-color: transparent;
+    background-color: rgba(71, 65, 84, 0.202);
     color: #406E8E;
     margin-top: 70px;
     align-items: center;
+    padding-inline: 100%;
 }
 
 .conector p {
@@ -305,21 +314,67 @@ h2 {
     color: beige;
 }
 
-.productos {
-    display: flex;
-    align-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-    justify-content: space-evenly;
-}
-
-.flex {
-    display: flex;
+.grilla-productos {
+    display: grid;
+    grid-template-areas: 
+    "fil art "
+    "fil art "
+    ;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
+    align-items: center; */
+    }
+
+    
+.articulo {
+    grid-area: art;
+    display: flex;
+    align-content: space-around;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.articulo h2{
+    color: #406E8E;
+    margin-left: 450px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #8ea8c356;
+   
+}
+
+.filtro{
+    grid-area: fil;
+    background-color: #5da5d8;
+    color: black;
+    list-style-type: none;
+    padding: 50px;
+
+}
+
+.categorias{
+    margin: 5px;
+    color: black;
+    font-family: sans-serif;
+    background-color: #8EA8C3;
+    padding-inline: 25px;
+}
+
+.filtro li{
+    margin: 5px;
+    
+}
+
+.filtro li a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    margin-left: 10px;
 }
 
 .herramienta img {
@@ -336,11 +391,15 @@ h2 {
 }
 
 .herramienta {
+    display: flex;
+    flex-direction: column;
     border: solid grey 2px;
     border-radius: 15px;
-    margin: 90px;
+    margin: 25px;
     text-align: center;
     box-shadow: 15px 15px 25px 1px;
+    align-items: center;
+    background-color: white;
 }
 
 .buscar {
@@ -348,6 +407,7 @@ h2 {
     margin: 15px;
     height: 25px;
     width: 300px;
+    background-color: #f3f3f4c1;
 }
 
 
