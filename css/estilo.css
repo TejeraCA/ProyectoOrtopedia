@@ -13,53 +13,33 @@
     padding: 0px;
 }
 
-
-.header {
-    background-color: #406E8E;
-    display: flex;
-    align-content: space-evenly;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+.navbar {
+    padding: 0px;
 }
 
-.menu ul {
-    text-align: center;
-    color: #CBF7ED;
-    margin-left: 30px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.container-fluid {
+    background-color: #5da5d8;
+    flex-direction: row-reverse;
 }
 
-.menu ul li {
-    list-style-type: none;
-    font-size: 23px;
-    font-family: sans-serif;
-    margin: 50px;
+.navbar-toggler {
+    background-color: white;
 }
 
-.menu ul li a {
-    color: beige;
-    text-decoration: none;
+.form-control {
+    margin: 5px;
 }
 
-
-
+.btn {
+    margin: 2px;
+    background-color: white;
+}
 
 .logo {
     height: 100px;
     width: 100px;
     margin-left: 50px;
 }
-
-.sesion {
-    height: 50px;
-    width: 50px;
-    margin-right: 20px;
-}
-
-
 
 .main-index,
 .main-productos {
@@ -78,7 +58,7 @@
 .boton-banner {
     padding: 5px;
     margin: 5px;
-    margin-left: 1300px;
+    margin-left: 75%;
     border-radius: 15px;
     margin-bottom: 35px;
     background-color: #406E8E;
@@ -239,7 +219,8 @@ h2 {
     color: #406E8E;
     margin-top: 70px;
     align-items: center;
-    padding-inline: 100%;
+    border-radius: 10px;
+    width: 75%;
 }
 
 .conector p {
@@ -267,7 +248,7 @@ h2 {
 }
 
 .congreso div a {
-    margin: 500px;
+    margin: 400px;
 
 }
 
@@ -277,6 +258,7 @@ h2 {
     border-radius: 25px;
     width: 150px;
     height: 50px;
+
 }
 
 .congreso p {
@@ -301,9 +283,17 @@ h2 {
     width: 700px;
 }
 
+
 .form input {
     display: block;
+    background-color: #5da5d80e;
+    border-radius: 10px;
 }
+
+.form textarea{
+background-color: #5da5d80e;
+}
+bo
 
 
 .ver-mas {
@@ -316,18 +306,13 @@ h2 {
 
 .grilla-productos {
     display: grid;
-    grid-template-areas: 
-    "fil art "
-    "fil art "
+    grid-template-areas:
+        "fil art "
+        "fil art "
     ;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center; */
-    }
+}
 
-    
+
 .articulo {
     grid-area: art;
     display: flex;
@@ -338,17 +323,17 @@ h2 {
     justify-content: space-evenly;
 }
 
-.articulo h2{
+.articulo h2 {
     color: #406E8E;
     margin-left: 450px;
     margin-right: 300px;
     margin-top: 50px;
     margin-bottom: 50px;
     background-color: #8ea8c356;
-   
+
 }
 
-.filtro{
+.filtro {
     grid-area: fil;
     background-color: #5da5d8;
     color: black;
@@ -357,7 +342,7 @@ h2 {
 
 }
 
-.categorias{
+.categorias {
     margin: 5px;
     color: black;
     font-family: sans-serif;
@@ -365,13 +350,13 @@ h2 {
     padding-inline: 25px;
 }
 
-.filtro li{
+.filtro li {
     margin: 5px;
-    
+
 }
 
-.filtro li a{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.filtro li a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: rgb(248, 248, 248);
     margin-left: 10px;
@@ -449,10 +434,303 @@ h2 {
 }
 
 .historia {
-    margin-left: 25px;
-    padding-bottom: 195px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.historia h3{
+    margin-top: 75px;
+    font-size: 50px;
+    color: #2c658e;
+}
+
+.historia p{
+    width: 1200px;
+    font-family: parrafo;
+    font-size: 45px;
+    margin: 25px;
+    margin-bottom: 200px;
+    color: #2c658e;
+}
+
+.historia iframe{
+    width: 1300px;
+    height: 900px;
+    margin: 25px;
+}
+
 
 .mapa {
     margin: 25px;
+}
+
+.contactos{
+    background-color: rgba(0, 0, 0, 0.288);
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.contactos p{
+    font-family: parrafo;
+    color:#2c658e;
+    font-size: 45px;
+
+}
+
+
+/* RESPONSIVE */
+/* Mobile Last */
+@media (max-width:1440px) {
+    .noticias {
+        overflow: hidden;
+        width: 1440px;
+        height: auto;
+    }
+
+    .subcong {
+        width: 700px;
+    }
+
+}
+
+@media (max-width:1024px) {
+    .boton-banner {
+        width: 250px;
+        margin-left: 70%;
+        height: 40px;
+        display: flex;
+        justify-content: end;
+        font-size: 21px;
+    }
+
+.noticias{
+    width: 1024px;
+    overflow: hidden;
+}
+
+    .congreso {
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: flex-start;
+        align-content: space-between;
+        text-align: center;
+        width: 1024px;
+    }
+
+    .subcong {
+        width: 630px;
+    }
+
+    .subcong p {
+        width: 550px;
+        font-size: 12px;
+    }
+
+    .subcong h2 {
+        width: 600px;
+        font-size: 15px;
+    }
+
+    .congreso img {
+        width: 300px;
+    }
+
+    .demo {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        grid-template-columns: none;
+        justify-content: center;
+        grid-template-areas:
+            "inf link"
+            "map map"
+        ;
+    }
+
+    .info {
+        grid-area: inf;
+    }
+
+    .links {
+        grid-area: link;
+    }
+
+    .mapa {
+        grid-area: map;
+    }
+
+    .conector h2 {
+        padding-inline: 20px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width:768px) {
+    .boton-banner {
+        width: 250px;
+        margin-left: 60%;
+        height: 40px;
+        display: flex;
+        justify-content: end;
+        font-size: 21px;
+    }
+
+    .noticias{
+        width: 768px;
+        overflow: hidden;
+    }
+
+    .congreso {
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 700px;
+        justify-content: space-around;
+        width: 768px;
+    }
+
+    .congreso img {
+        margin: auto;
+        width: 350px;
+
+    }
+
+    .congreso h2 {
+        font-size: 25px;
+    }
+
+    .congreso p {
+        font-size: 15px;
+    }
+
+    .congreso div a button {
+        align-content: center;
+    }
+
+    .imgfuera {}
+
+    .demo {
+        flex-wrap: wrap;
+    }
+
+    .footer {
+        grid-template-columns: none;
+        justify-content: center;
+        grid-template-areas:
+            "inf link"
+            "map map"
+        ;
+    }
+
+    .info {
+        grid-area: inf;
+    }
+
+    .links {
+        grid-area: link;
+    }
+
+    .mapa {
+        grid-area: map;
+    }
+
+    .conector h2 {
+        padding-inline: 20px;
+        border-radius: 25px;
+    }
+
+    .carousel-item img {
+        height: 550px !important;
+    }
+}
+
+@media (max-width: 425px) {
+
+.noticias{
+    width: 425px;
+    overflow: hidden;
+}
+
+    .congreso {
+        width: auto;
+        height: auto;
+        padding: 0px;
+    }
+
+    .congreso img {
+        width: 420px;
+        margin: 0px;
+        
+    }
+
+    .subcong h2 {
+        margin: 0px;
+        width: 420px;
+    }
+
+    .subcong p {
+        width: 420px;
+        margin: 0px;
+    }
+
+    .congreso div a {
+        margin: 0px;
+    }
+
+    .footer {
+        width: 425px;
+        overflow: hidden;
+        grid-template-areas:
+            "inf"
+            "link"
+            "map"
+        ;
+    }
+
+    .mapa {
+        width: 400px;
+        height: 250px;
+    }
+
+    .boton-banner {
+        width: 150px;
+        font-size: 12px;
+    }
+
+
+    .slidefotos {
+        height: 250px;
+        padding: 0px;
+    }
+
+    .carousel-control-prev {
+        height: 250px;
+    }
+
+    .carousel-control-next {
+        height: 250px;
+    }
+
+    .carouse-inner {
+        height: 250px;
+        width: 250px;
+
+    }
+
+    .carousel-item img {
+        height: 250px !important;
+    }
+
+
 }

@@ -5,57 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
 <body>
-    
-    <section class="header">
-        <img class="logo" src="https://ortopediabeltran.com.ar/wp-content/uploads/2020/01/venta.png"
-            alt="Logo Ortopedia">
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-            </ul>
-        </nav>
 
-        <a class="sesion" href="./registro.html"><img class="sesion" src="../resources/inicio-sesion.png"
-                alt="Iniciar Sesion"></a>
-    </section>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img class="logo" src="https://ortopediabeltran.com.ar/wp-content/uploads/2020/01/venta.png"
+                alt="Logo de la ortopedia">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Mas contenido
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./servicios.html">Servicios</a></li>
+                            <li><a class="dropdown-item" href="./nosotros.html">Sobre Nosotros</a></li>
+                            <li><a class="dropdown-item" href="./registro.html">Usuario</a></li>
+                            <li><a class="dropdown-item" href="./contacto.html">Contactanos</a></li>
+                            <li><a class="dropdown-item" href="./terms.html">Nuestras politicas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="pj: Pinzas, trocares, etc..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
     <main class="main-index">
-        <h3 class="producto">Contacto</h3>
-        <p class="parrafo-form">Llena el formulario con tus dudas, ¡estamos a tu disposicion!</p>
-        <form action="#" method="get" class="form">
-            <div class="form">
-                <p>Nombre y Apellido</p>
-                <input type="text" placeholder="Roberto Gonzales" name="Nombre">
-                <p>Localidad</p>
-                <input type="text" placeholder="San Juan">
-                <p>Numero de telefono</p>
-                <input type="tel" placeholder="+45 1234566" name="telefono">
-                <p>Email</p>
-                <input type="email" placeholder="robergomez@gmail.com" name="email">
-                <p>Dejanos tu comentario</p>
-                <textarea placeholder="Escribe aqui" name="coment" id="" cols="50" rows="10"></textarea>
-                <input type="submit" placeholder="Enviar" name="Submit">
-            </div>
-        </form>
-        <p class="producto">
-            Nos ubicamos en la ciudad de Pergamino (Buenos Aires), calle Rivadavia 375. <br>
-            <strong>Horario de atencion:</strong> lunes a sabados de 8:00 a 13:00; 16.30 a 21.00
-        </p>
+        <section class="contactos">
+            <p class="parrafo-form">Llena el formulario con tus dudas, ¡estamos a tu disposicion!</p>
+            <form action="#" method="get" class="form">
+                <div class="form">
+                    <p>Nombre y Apellido</p>
+                    <input type="text" placeholder="Roberto Gonzales" name="Nombre">
+                    <p>Localidad</p>
+                    <input type="text" placeholder="San Juan">
+                    <p>Numero de telefono</p>
+                    <input type="tel" placeholder="+45 1234566" name="telefono">
+                    <p>Email</p>
+                    <input type="email" placeholder="robergomez@gmail.com" name="email">
+                    <p>Dejanos tu comentario</p>
+                    <textarea placeholder="Escribe aqui" name="coment" id="" cols="50" rows="10"></textarea>
+                    <input type="submit" placeholder="Enviar" name="Submit">
+                </div>
+            </form>
+            <p class="producto">
+                Nos ubicamos en la ciudad de Pergamino (Buenos Aires), calle Rivadavia 375. <br>
+                <strong>Horario de atencion:</strong> Lunes a Sabados de 8:00 a 13:00; 16.30 a 21.00.
+            </p>
+        </section>
 
-        
     </main>
+
     <section class="footer">
         <div>
             <p><strong>Direccion</strong><br><br> Calle Rivadavia 375 <br>Pergamino (2700) <br>Buenos Aires
-                <br>Argentina</p><br><br>
+                <br>Argentina
+            </p><br><br>
             <p><strong>Contacto</strong> <br><br> Email:ortopedia@gmail.com <br>Telefono: 2477-750822 <br>Fax:
                 2477-000001</p>
         </div>
@@ -71,7 +98,8 @@
                     alt="Instagram">
                 <p>Instagram</p>
             </a>
-            <a class="apps" href="https://web.whatsapp.com/"><img class="apps" src="../resources/wsp2.png" alt="WhatsApp">
+            <a class="apps" href="https://web.whatsapp.com/"><img class="apps" src="../resources/wsp2.png"
+                    alt="WhatsApp">
                 <p>Whatsapp</p>
             </a>
             <a class="apps" href="https://twitter.com/?lang=es"><img class="apps"
@@ -88,6 +116,9 @@
         </div>
 
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
