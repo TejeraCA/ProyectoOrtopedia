@@ -448,7 +448,7 @@ h2 {
 .historia p {
     width: 1200px;
     font-family: parrafo;
-    font-size: 45px;
+    font-size: 35px;
     margin: 25px;
     margin-bottom: 200px;
     color: #2c658e;
@@ -481,9 +481,9 @@ h2 {
 
 }
 
-.dropdown{
+ /* .dropdown{
     display: none;
-}
+}  */
 
 
 /* RESPONSIVE */
