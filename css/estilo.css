@@ -481,9 +481,9 @@ h2 {
 
 }
 
- /* .dropdown{
+.desplegable{
     display: none;
-}  */
+}
 
 
 /* RESPONSIVE */
@@ -587,6 +587,10 @@ h2 {
         justify-content: end;
         font-size: 21px;
     }
+
+.desplegable{
+    display: inline;
+}
 
     .noticias {
         width: 768px;
