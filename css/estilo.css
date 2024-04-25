@@ -290,13 +290,11 @@ h2 {
     border-radius: 10px;
 }
 
-.form textarea{
-background-color: #5da5d80e;
+.form textarea {
+    background-color: #5da5d80e;
 }
-bo
 
-
-.ver-mas {
+.d {
     padding: 5px;
     margin: 5px;
     border-radius: 15px;
@@ -335,7 +333,7 @@ bo
 
 .filtro {
     grid-area: fil;
-    background-color: #5da5d8;
+    background-color: #5da5d865;
     color: black;
     list-style-type: none;
     padding: 50px;
@@ -441,13 +439,13 @@ bo
     align-items: center;
 }
 
-.historia h3{
+.historia h3 {
     margin-top: 75px;
     font-size: 50px;
     color: #2c658e;
 }
 
-.historia p{
+.historia p {
     width: 1200px;
     font-family: parrafo;
     font-size: 45px;
@@ -456,7 +454,7 @@ bo
     color: #2c658e;
 }
 
-.historia iframe{
+.historia iframe {
     width: 1300px;
     height: 900px;
     margin: 25px;
@@ -467,7 +465,7 @@ bo
     margin: 25px;
 }
 
-.contactos{
+.contactos {
     background-color: rgba(0, 0, 0, 0.288);
     display: flex;
     display: flex;
@@ -476,15 +474,20 @@ bo
     align-items: center;
 }
 
-.contactos p{
+.contactos p {
     font-family: parrafo;
-    color:#2c658e;
+    color: #2c658e;
     font-size: 45px;
 
 }
 
+.dropdown{
+    display: none;
+}
+
 
 /* RESPONSIVE */
+/* Index */
 /* Mobile Last */
 @media (max-width:1440px) {
     .noticias {
@@ -509,10 +512,10 @@ bo
         font-size: 21px;
     }
 
-.noticias{
-    width: 1024px;
-    overflow: hidden;
-}
+    .noticias {
+        width: 1024px;
+        overflow: hidden;
+    }
 
     .congreso {
         display: flex;
@@ -585,7 +588,7 @@ bo
         font-size: 21px;
     }
 
-    .noticias{
+    .noticias {
         width: 768px;
         overflow: hidden;
     }
@@ -617,8 +620,6 @@ bo
     .congreso div a button {
         align-content: center;
     }
-
-    .imgfuera {}
 
     .demo {
         flex-wrap: wrap;
@@ -657,10 +658,10 @@ bo
 
 @media (max-width: 425px) {
 
-.noticias{
-    width: 425px;
-    overflow: hidden;
-}
+    .noticias {
+        width: 425px;
+        overflow: hidden;
+    }
 
     .congreso {
         width: auto;
@@ -671,7 +672,7 @@ bo
     .congreso img {
         width: 420px;
         margin: 0px;
-        
+
     }
 
     .subcong h2 {
@@ -733,4 +734,88 @@ bo
     }
 
 
+}
+
+/* Responsive Productos */
+
+@media (max-width: 1440px) {
+        .filtro {
+        padding: 0px;
+        width: 250px;
+    }
+
+    .container-fluid{
+        width: 1440px;
+    }
+    
+    .articulo h2{
+    font-size: 55px;
+    margin-left: 120px;
+    margin-right: 100px;
+    }
+
+    .herramienta{
+        width: 270px;
+    }
+    
+
+    .grilla-productos{
+        width: 1240px;
+    }
+
+    .buscar{
+        width: 190px;
+    }
+
+    .categorias{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px){
+
+    
+
+.filtro{
+    display: none;
+}
+
+.dropdown{
+    color: #2c658e;
+}
+
+.articulo{
+    width: 768px;
+}
+
+.grilla-productos{
+    width: 768px;
+}
+
+.dropdown{
+    display: block;
+    color: #2c658e;
+}
+
+.articulo h2{
+    width: 450px;
+    font-size: 35px;
+    text-align: center;
+}
+}
+
+@media (max-width: 425px){
+    .articulo{
+        width: 425px;
+    }
+    
+    .grilla-productos{
+        width: 425px;
+    }
+
+    .articulo h2{
+        width: 300px;
+        font-size: 20px;
+        text-align: center;
+    }
 }
